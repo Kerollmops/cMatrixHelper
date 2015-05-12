@@ -6,13 +6,13 @@
 /*   By: crenault <crenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/05/11 17:17:15 by crenault          #+#    #+#             */
-/*   Updated: 2015/05/12 23:19:44 by crenault         ###   ########.fr       */
+/*   Updated: 2015/05/12 23:25:06 by crenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/mat4.h"
 
-void				mat4_mult(float *out, float *m, float *n)
+void				mat4_mult(t_mat4 *out, float *m, float *n)
 {
 	size_t			i;
 	size_t			j;
@@ -23,7 +23,7 @@ void				mat4_mult(float *out, float *m, float *n)
 		j = 0;
 		while (j < 4)
 		{
-			out[i + j] = (n[i + 0] * m[j + 0]) + (n[i + 1] * m[j + 4])
+			out->m[i + j] = (n[i + 0] * m[j + 0]) + (n[i + 1] * m[j + 4])
 							+ (n[i + 2] * m[j + 8]) + (n[i + 3] * m[j + 12]);
 			++j;
 		}
