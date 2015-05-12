@@ -6,7 +6,7 @@
 /*   By: crenault <crenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/05/11 17:17:15 by crenault          #+#    #+#             */
-/*   Updated: 2015/05/13 00:24:04 by crenault         ###   ########.fr       */
+/*   Updated: 2015/05/13 00:26:48 by crenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void				mat4_mult(t_mat4 *out, float *m, float *n)
 {
-	size_t			i;
-	size_t			j;
+	unsigned int	i;
+	unsigned int	j;
 
 	i = 0;
 	while (i < 16)
