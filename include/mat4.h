@@ -6,7 +6,7 @@
 /*   By: crenault <crenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/05/12 22:26:16 by crenault          #+#    #+#             */
-/*   Updated: 2015/05/12 23:26:29 by crenault         ###   ########.fr       */
+/*   Updated: 2015/05/13 00:23:45 by crenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define MAT4_H
 
 # include "../include/vec3.h"
-# include "../libft/includes/libft.h"
 
 /*
 ** mat4 struct

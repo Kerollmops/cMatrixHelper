@@ -6,14 +6,12 @@
 /*   By: crenault <crenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/05/12 22:27:27 by crenault          #+#    #+#             */
-/*   Updated: 2015/05/12 23:26:16 by crenault         ###   ########.fr       */
+/*   Updated: 2015/05/13 00:24:23 by crenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef VEC3_H
 # define VEC3_H
-
-# include "../libft/includes/libft.h"
 
 /*
 ** vec3 struct

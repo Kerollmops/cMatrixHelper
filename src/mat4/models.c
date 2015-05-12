@@ -6,12 +6,13 @@
 /*   By: crenault <crenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/05/10 23:06:44 by crenault          #+#    #+#             */
-/*   Updated: 2015/05/12 23:24:43 by crenault         ###   ########.fr       */
+/*   Updated: 2015/05/13 00:23:59 by crenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <math.h>
 #include "../../include/mat4.h"
+#include "../../libft/includes/libft.h"
 
 void				mat4_ident(t_mat4 *out)
 {
