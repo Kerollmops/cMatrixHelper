@@ -6,14 +6,18 @@
 #    By: crenault <crenault@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/05/12 22:18:24 by crenault          #+#    #+#              #
-#    Updated: 2015/05/12 23:20:00 by crenault         ###   ########.fr        #
+#    Updated: 2015/05/12 23:31:01 by crenault         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-# no libs
+# libft
+FT_FOLD = libft
+FT_CHECK = $(FT_FOLD)/.git
+FT_LIB = libft/libft.a
+FT_FLAGS = -L$(FT_FOLD) -lft
 
 # submodules
-SUBMODULES =
+SUBMODULES = $(FT_CHECK)
 
 # compiler
 CC = clang
@@ -23,7 +27,7 @@ FT = c
 FLAGS = -Wall -Wextra -Werror -O3
 FLAGS += -g
 # binary flags (add libraries)
-BIN_FLAGS = $(FLAGS)
+BIN_FLAGS = $(FLAGS) $(FT_FLAGS)
 # executable
 NAME = cmh.a
 
@@ -49,7 +53,7 @@ re: fclean $(NAME)
 # reclone submodule and rebuild
 rere: ffclean $(NAME)
 
-$(NAME): $(SUBMODULES) $(OBJS)
+$(NAME): $(SUBMODULES) $(FT_LIB) $(OBJS)
 	@ar rc $@ $(OBJS)
 	@ranlib $@
 	@echo $@ "updated!"
@@ -65,6 +69,11 @@ $(SUBMODULES):
 	@git submodule update
 	@echo $@ "updated!"
 
+# lib libft
+$(FT_LIB):
+	@make -C $(FT_FOLD)
+	@echo $@ "updated!"
+
 #
 .PHONY: clean fclean ffclean
 
@@ -74,9 +83,11 @@ clean:
 
 # clean submodules
 cleansubs:
+	@rm -rf $(FT_FOLD)
 
 # clean exec file and library
 fclean: clean
+	@rm -rf $(FT_LIB)
 	@rm -rf $(NAME)
 
 # get empty and clean repo (without libs)
