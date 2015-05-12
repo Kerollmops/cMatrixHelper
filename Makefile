@@ -6,7 +6,7 @@
 #    By: crenault <crenault@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/05/12 22:18:24 by crenault          #+#    #+#              #
-#    Updated: 2015/05/12 23:31:01 by crenault         ###   ########.fr        #
+#    Updated: 2015/05/13 00:12:17 by crenault         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,7 @@ FLAGS += -g
 # binary flags (add libraries)
 BIN_FLAGS = $(FLAGS) $(FT_FLAGS)
 # executable
-NAME = cmh.a
+NAME = libcmh.a
 
 # to compile files
 #SRC = src/mat4/simple.c
