@@ -6,7 +6,7 @@
 /*   By: crenault <crenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/05/12 12:29:58 by crenault          #+#    #+#             */
-/*   Updated: 2015/05/13 00:27:02 by crenault         ###   ########.fr       */
+/*   Updated: 2015/05/13 13:26:07 by crenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ t_vec3				vec3(float x, float y, float z)
 	return (ret);
 }
 
-t_vec3				vec3_normalize(t_vec3 vec)
+t_vec3				vec3_normal(t_vec3 vec)
 {
 	float			len;
 
