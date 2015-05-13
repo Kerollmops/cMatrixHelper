@@ -6,7 +6,7 @@
 /*   By: crenault <crenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/05/12 22:26:16 by crenault          #+#    #+#             */
-/*   Updated: 2015/05/13 00:23:45 by crenault         ###   ########.fr       */
+/*   Updated: 2015/05/13 12:20:30 by crenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,13 @@
 # define MAT4_H
 
 # include "../include/vec3.h"
+
+/*
+** [ 0][ 1][ 2][ 3]
+** [ 4][ 5][ 6][ 7]
+** [ 8][ 9][10][11]
+** [12][13][14][15]
+*/
 
 /*
 ** mat4 struct
@@ -40,6 +47,6 @@ void				mat4_rotate(t_mat4 *out, float ang, t_vec3 vec);
 /*
 ** mat4/operators.c
 */
-void				mat4_mult(t_mat4 *out, float *m, float *n);
+void				mat4_mult(t_mat4 *out, t_mat4 *m, t_mat4 *n);
 
 #endif
