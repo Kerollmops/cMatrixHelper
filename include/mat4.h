@@ -6,7 +6,7 @@
 /*   By: crenault <crenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/05/12 22:26:16 by crenault          #+#    #+#             */
-/*   Updated: 2015/05/13 12:20:30 by crenault         ###   ########.fr       */
+/*   Updated: 2015/05/13 13:23:16 by crenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,6 @@ typedef struct		s_mat4
 	float			m[4 * 4];
 
 }					t_mat4;
-
-/*
-** mat4/simple.c
-*/
-
 
 /*
 ** mat4/models.c

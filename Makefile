@@ -6,7 +6,7 @@
 #    By: crenault <crenault@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/05/12 22:18:24 by crenault          #+#    #+#              #
-#    Updated: 2015/05/13 00:12:17 by crenault         ###   ########.fr        #
+#    Updated: 2015/05/13 13:23:32 by crenault         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,7 +32,6 @@ BIN_FLAGS = $(FLAGS) $(FT_FLAGS)
 NAME = libcmh.a
 
 # to compile files
-#SRC = src/mat4/simple.c
 SRC = src/mat4/operators.c
 SRC += src/mat4/models.c
 SRC += src/vec3/simple.c
