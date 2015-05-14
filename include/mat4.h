@@ -6,7 +6,7 @@
 /*   By: crenault <crenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/05/12 22:26:16 by crenault          #+#    #+#             */
-/*   Updated: 2015/05/13 13:23:16 by crenault         ###   ########.fr       */
+/*   Updated: 2015/05/14 21:05:37 by crenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,14 +34,14 @@ typedef struct		s_mat4
 /*
 ** mat4/models.c
 */
-void				mat4_ident(t_mat4 *out);
-void				mat4_trans(t_mat4 *out, float x, float y, float z);
-void				mat4_scale(t_mat4 *out, float x, float y, float z);
-void				mat4_rotate(t_mat4 *out, float ang, t_vec3 vec);
+t_mat4				mat4_ident(void);
+t_mat4				mat4_trans(float x, float y, float z);
+t_mat4				mat4_scale(float x, float y, float z);
+t_mat4				mat4_rotate(float ang, t_vec3 vec);
 
 /*
 ** mat4/operators.c
 */
-void				mat4_mult(t_mat4 *out, t_mat4 *m, t_mat4 *n);
+t_mat4				mat4_mult(t_mat4 *m, t_mat4 *n);
 
 #endif
