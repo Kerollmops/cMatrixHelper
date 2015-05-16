@@ -6,7 +6,7 @@
 /*   By: crenault <crenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/05/12 22:27:27 by crenault          #+#    #+#             */
-/*   Updated: 2015/05/16 18:40:29 by crenault         ###   ########.fr       */
+/*   Updated: 2015/05/16 18:50:39 by crenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ typedef struct		s_vec3
 */
 t_vec3				vec3(float x, float y, float z);
 t_vec3				vec3_normal(t_vec3 vector);
-unsigned int		vec3_len(t_vec3 vec);
+float				vec3_len(t_vec3 vec);
 
 /*
 ** vec3/operators.c

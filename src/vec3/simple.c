@@ -6,7 +6,7 @@
 /*   By: crenault <crenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/05/12 12:29:58 by crenault          #+#    #+#             */
-/*   Updated: 2015/05/16 18:40:25 by crenault         ###   ########.fr       */
+/*   Updated: 2015/05/16 18:50:49 by crenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ t_vec3				vec3_normal(t_vec3 vec)
 	return (vec3(vec.x / len, vec.y / len, vec.z / len));
 }
 
-unsigned int		vec3_len(t_vec3 vec)
+float				vec3_len(t_vec3 vec)
 {
-	return (sqrt((vec.x * vec.x) + (vec.y * vec.y) + (vec.z * vec.z)));
+	return (sqrtf((vec.x * vec.x) + (vec.y * vec.y) + (vec.z * vec.z)));
 }
