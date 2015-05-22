@@ -6,7 +6,7 @@
 /*   By: crenault <crenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/05/12 22:26:16 by crenault          #+#    #+#             */
-/*   Updated: 2015/05/14 21:05:37 by crenault         ###   ########.fr       */
+/*   Updated: 2015/05/22 17:13:39 by crenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,6 @@ t_mat4				mat4_rotate(float ang, t_vec3 vec);
 /*
 ** mat4/operators.c
 */
-t_mat4				mat4_mult(t_mat4 *m, t_mat4 *n);
+t_mat4				mat4_mult(t_mat4 m, t_mat4 n);
 
 #endif
