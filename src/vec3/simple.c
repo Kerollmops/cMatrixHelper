@@ -6,7 +6,7 @@
 /*   By: crenault <crenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/05/12 12:29:58 by crenault          #+#    #+#             */
-/*   Updated: 2015/05/16 18:50:49 by crenault         ###   ########.fr       */
+/*   Updated: 2015/05/23 18:31:48 by crenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ t_vec3				vec3(float x, float y, float z)
 
 t_vec3				vec3_normal(t_vec3 vec)
 {
-	unsigned int	len;
+	float			len;
 
 	len = vec3_len(vec);
 	return (vec3(vec.x / len, vec.y / len, vec.z / len));
