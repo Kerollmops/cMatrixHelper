@@ -6,7 +6,7 @@
 /*   By: crenault <crenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/05/12 14:31:20 by crenault          #+#    #+#             */
-/*   Updated: 2015/05/13 00:24:30 by crenault         ###   ########.fr       */
+/*   Updated: 2015/05/27 18:53:59 by crenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 t_vec3				vec3_cross(t_vec3 vec_a, t_vec3 vec_b)
 {
 	return (vec3(vec_a.y * vec_b.z - vec_a.z * vec_b.y,
-					vec_a.z * vec_b.x - vec_a.x * vec_b.z,
-					vec_a.x * vec_b.y - vec_a.y * vec_b.x));
+	vec_a.z * vec_b.x - vec_a.x * vec_b.z,
+	vec_a.x * vec_b.y - vec_a.y * vec_b.x));
 }
 
 float				vec3_dot(t_vec3 vec_a, t_vec3 vec_b)
