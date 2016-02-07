@@ -6,12 +6,16 @@
 /*   By: crenault <crenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/05/12 22:26:16 by crenault          #+#    #+#             */
-/*   Updated: 2015/05/22 17:13:39 by crenault         ###   ########.fr       */
+/*   Updated: 2016/02/07 21:41:22 by crenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef MAT4_H
 # define MAT4_H
+
+# ifdef __cplusplus
+extern "C" {
+# endif
 
 # include "../include/vec3.h"
 
@@ -43,5 +47,9 @@ t_mat4				mat4_rotate(float ang, t_vec3 vec);
 ** mat4/operators.c
 */
 t_mat4				mat4_mult(t_mat4 m, t_mat4 n);
+
+# ifdef __cplusplus
+}
+# endif
 
 #endif

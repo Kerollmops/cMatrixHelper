@@ -6,12 +6,16 @@
 /*   By: crenault <crenault@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/05/12 22:27:27 by crenault          #+#    #+#             */
-/*   Updated: 2015/05/16 18:50:39 by crenault         ###   ########.fr       */
+/*   Updated: 2016/02/07 21:41:55 by crenault         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef VEC3_H
 # define VEC3_H
+
+# ifdef __cplusplus
+extern "C" {
+# endif
 
 /*
 ** vec3 struct
@@ -42,5 +46,9 @@ t_vec3				vec3_sub(t_vec3 vec_a, t_vec3 vec_b);
 */
 t_vec3				vec3_cross(t_vec3 vec_a, t_vec3 vec_b);
 float				vec3_dot(t_vec3 vec_a, t_vec3 vec_b);
+
+# ifdef __cplusplus
+}
+# endif
 
 #endif
